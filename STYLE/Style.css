@@ -1,0 +1,95 @@
+body {
+  background: linear-gradient(to left, orange, blue, white);
+}
+
+.titulos {
+  text-align: center;
+  color: white;
+}
+p {
+  text-align: center;
+}
+
+/* strong {
+  color: blue;
+} */
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* .navbar-multicolor {
+  background: linear-gradient(to left,orange, blue,white); 
+} */
+
+.Formulario {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.Teléfono {
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  /*  box-shadow: 0 0 10px #ccc; */
+}
+.Correo {
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  /*  box-shadow: 0 0 10px #ccc; */
+}
+
+.Dirección {
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.Horario {
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px #ccc; */
+}
+.Redes_sociales {
+  margin: auto;
+  text-align: center;
+  color: black;
+  /* background-color: white; */
+}
+/* facebook */
+.F {
+  display: inline-block;
+  margin-right: 15px;
+}
+.I {
+  display: inline-block;
+  margin-right: 15px;
+}
+.W {
+  display: inline-block;
+  margin-right: 15px;
+}
+.L {
+  display: inline-block;
+  margin-right: 15px;
+}
+.T {
+  display: inline-block;
+  margin-right: 15px;
+}

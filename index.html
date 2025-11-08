@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,35 +19,97 @@
     <!-- archivo css -->
     <link rel="stylesheet" href="STYLE/Style.css">
 </head>
+
 <body>
-    <h1>Contáctanos</h1>
-    <p><strong>¿Tienes alguna duda o quieres más información?</strong> Envíanos un mensaje y te responderemos pronto.</p>
+    <nav class="navbar navbar-multicolor">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a class="navbar-brand position-absolute start-0" href="#">
+                <img src="IMAGENES/icono.png" alt="Contactos" width="80" height="80" class="me-1">
+            </a>
+            <h1 style="color:white;" class="m-0 text-center flex-grow-1">Contacta con nosotros</h1>
+        </div>
+    </nav>
 
 
 
+    <p><b>Póngase en contacto y háganos saber cómo podemos ayudar.</b></p>
+    <p><strong>¿Tienes alguna duda o quieres más información?</strong> Envíanos un mensaje y te responderemos pronto.
+    </p>
+    <form class="Formulario">
 
-    <h2>Datos de contacto directo</h2>
-    <p>Si no se desea usar el formulario, se dan los datos para contacto manual:<br>
+        <h1 class="titulos">Envíanos un mensaje</h1>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="Nombre">Nombre:</span>
+            <input type="text" class="form-control" placeholder="Ej: Maria" aria-label="Nombre"
+                aria-describedby="basic-addon1">
+        </div>
 
-<strong>📞 Teléfono:</strong> +57 300 123 4567
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="Apellido">Apellido:</span>
+            <input type="text" class="form-control" placeholder="Ej: Moreno" aria-describedby="basic-addon1">
+        </div>
 
-<strong>✉️ Correo:</strong> contacto@empresa.com
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="Correo">Correo:</span>
+            <input type="email" class="form-control" placeholder=" Maria_moreno@" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="Teléfono">Teléfono:</span>
+            <input type="tel" class="form-control" placeholder="+57 3115923283" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="Empresa">Empresa:</span>
+            <input type="email" class="form-control" placeholder=" tecno & asociados" aria-describedby="basic-addon1">
+        </div>
+        <div class="mb-3">
+            <label for="mensaje" class="form-label"><b>Comentario:</b></label>
+            <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí"></textarea>
+        </div>
+        <div style="text-align: center;">
+            <button type="button" class="btn btn-light">Enviar</button>
+        </div>
+    </form>
+    <br>
 
-<strong>📍 Dirección física:</strong> Calle 10 #12–34, Bogotá, Colombia
+    <h2 class="titulos">Datos de contacto directo</h2>
+    <p>Si no se desea usar el formulario, se dan los datos para contacto manual:<br><br>
 
-<strong>⏰ Horario de atención:</strong> Lunes a Viernes, 8:00 a.m. – 6:00 p.m.</p>
+    <div class="contenedor">
+        <div class="Teléfono">
+            <strong>📞 Teléfono:</strong> +57 300 123 4567
+        </div>
+        <div class="Correo">
+            <strong>✉️ Correo:</strong> contacto@empresa.com
+        </div>
+        <div class="Dirección">
+            <strong>📍 Dirección física:</strong> Calle 10 #12–34, Bogotá, Colombia
+        </div>
+        <div class="Horario">
+            <strong>⏰ Horario de atención:</strong> Lunes a Viernes, 8:00 a.m. – 6:00 p.m.</p>
+        </div>
+    </div>
+    <br>
+    <div class="Redes_sociales">
+        <h3>Redes sociales</h3><br>
 
-<h3>Redes sociales</h3>
-
-<p><b>Facebook</b><br>
-
-<b>Instagram</b><br>
-
-<b>WhatsApp</b><br>
-
-<b>LinkedIn</b><br>
-
-<b>X (Twitter)</b></p>
-
+        <!-- href= -->
+        <p><a class="F"><img src="IMAGENES/facebook.png" alt="Icono" width="40"
+                    height="40"><br><strong>Facebook</strong><br>
+            </a>
+            <a class="I"><img src="IMAGENES/instagram.png" alt="Icono" width="40"
+                    height="40"><br><strong>Instagram</strong><br>
+            </a>
+            <a class="W"><img src="IMAGENES/whatsapp.png" alt="Icono" width="40"
+                    height="40"><br><strong>WhatsApp</strong><br>
+            </a>
+            <a class="L"><img src="IMAGENES/linkedin.png" alt="Icono" width="40"
+                    height="40"><br><strong>LinkedIn</strong><br>
+            </a>
+            <a class="T"><img src="IMAGENES/twitter.png" alt="Icono" width="40" height="40"><br><strong>Twitter</strong>
+            </a>
+        </p>
+    </div>
+    <br>
 </body>
+
 </html>
