@@ -17,7 +17,7 @@ p {
 .contenedor {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
 }
 
 /* .navbar-multicolor {
