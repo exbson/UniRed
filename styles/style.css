@@ -1,0 +1,46 @@
+body {
+  background: linear-gradient(to left, orange, blue, white);
+}
+
+.titulos {
+  text-align: center;
+  color: white;
+}
+
+p {
+  text-align: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.formulario {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.div-contact {
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-radius: 10px;
+  /*  box-shadow: 0 0 10px #ccc; */
+}
+
+.div-redes {
+  margin: auto;
+  text-align: center;
+  color: black;
+  /* background-color: white; */
+}
+
+/* facebook */
+.label-redes {
+  display: inline-block;
+  margin-right: 15px;
+}
