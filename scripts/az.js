@@ -2,7 +2,7 @@ const data = {
   Routers: [
     {id:1,name:'Router AC1200', price:'$85.000', desc:'Dual-band, 4 puertos LAN, ideal para hogares medianos', img:"images/Router AC1200.png"},
     {id:2,name:'Router AX3000', price:'$220.000', desc:'Wi-Fi 6, MU-MIMO, mejor rendimiento en múltiples dispositivos', img:"images/Router AX3000.png"},
-    {id:3,name:'Router 4G LTE', price:'$140.000', desc:'Soporte SIM, ideal para zonas sin fibra o como backup', img:"images/Router AX3000Router 4G LTE.png"}
+    {id:3,name:'Router 4G LTE', price:'$140.000', desc:'Soporte SIM, ideal para zonas sin fibra o como backup',img:"images/Router AX3000Router 4G LTE.png"}
   ],
   Switches: [
     {id:10,name:'Switch 8 puertos Gigabit', price:'$120.000', desc:'Plug & play, montaje en escritorio', img:'https://images.unsplash.com/photo-1614064648228-42b4a0c8a276?auto=format&fit=crop&w=800&q=80'},
