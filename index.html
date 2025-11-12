@@ -22,47 +22,146 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- ESTILOS PERSONALIZADOS -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/funciones.js" defer></script>
 </head>
 
 <body>
-    <!-- Barra de navegación -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="images/icono.png" alt="Logo" width="60" height="60" class="me-1">
-                <span>UniRed</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
->>>>>>> Stashed changes
+     <!-- NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-primary shadow fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+          <img
+            src="images/blanco sin fondo.png"
+            width="75"
+            class="me-2 animate-logo"
+            alt="Logo Unired"
+          />
+          UNIRED
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+<!--             <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Nosotros</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="Servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos2.html">Productos</a>
+            </li>
+<!--             <li class="nav-item">
+              <a class="nav-link" href="#experiencia">Experiencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ubicacion">Ubicación</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Contenido principal -->
-    <div class="container text-center mt-4">
-        <div>
-        <h1>Bienvenido a UniRed</h1>
-        <p class="lead">Esta es la página de inicio.</p>
+    <main>
+      <!-- Banner INICIO -->
+      <div
+        id="inicio"
+        class="hero d-flex align-items-center text-center text-light"
+      >
+        <div class="container">
+          <h1 class="display-4 fw-bold fade-in">
+            <span class="text-warning">UNIRED</span>
+          </h1>
+          <p class="lead fade-in-delay">
+            Soluciones profesionales en conectividad, redes y tecnología. Mejora
+            tu empresa con tecnología de próxima generación.
+          </p>
+          <a
+            href="#nosotros"
+            class="btn btn-warning btn-lg mt-4 px-4 fade-in-delay2"
+          >
+            Descubre Más
+          </a>
         </div>
-    </div>
+      </div>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2025 UniRed | Todos los derechos reservados</p>
-    </footer>
-</body>
->>>>>>> Stashed changes
+      <!-- QUIÉNES SOMOS -->
+      <section id="nosotros" class="section-about py-5 bg-white">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-5 mb-4">
+              <img
+                src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1000&q=60"
+                class="img-fluid rounded shadow"
+                alt="Equipo UNIRED"
+              />
+            </div>
+            <div class="col-md-7">
+              <h2 class="text-primary fw-bold mb-3 text-warning">
+                ¿Quiénes Somos?
+              </h2>
+              <p class="lead mb-1">
+                Somos <b>UNIRED</b>, expertos en diseño, instalación y
+                mantenimiento de soluciones de red y tecnología para empresas y
+                hogares.
+              </p>
+              <p>
+                Contamos con personal especializado que garantiza calidad,
+                seguridad y eficiencia para cada proyecto. En UNIRED creemos que
+                una conexión confiable impulsa el crecimiento de las
+                organizaciones modernas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICIOS -->
+      <section id="servicios" class="section-services py-5 bg-light">
+        <div class="container">
+          <h2 class="text-center text-primary fw-bold mb-5 text-warning">
+            Nuestros Servicios
+          </h2>
+          <div class="row text-center">
+            <div class="col-md-4 mb-4">
+              <i class="bi bi-router fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">Redes Empresariales</h5>
+              <p>
+                Instalación y mantenimiento de redes cableadas/inalámbricas con
+                los más altos estándares.
+              </p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <i class="bi bi-hdd-network fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">Cableado Estructurado</h5>
+              <p>Cableado de datos, voz y fibra óptica profesional.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+              <i class="bi bi-shield-lock fs-1 text-primary mb-3"></i>
+              <h5 class="fw-bold">Seguridad Informática</h5>
+              <p>
+                Firewall, VPN, monitoreo y sistemas de protección avanzada de
+                datos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- PRODUCTOS -->
       <section id="productos" class="wifi-product-section py-5 bg-white">
