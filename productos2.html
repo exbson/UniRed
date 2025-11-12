@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Catálogo de Productos - Routers, Switches, Cámaras</title>
+  <link rel="stylesheet" href="styles/Style2.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Catálogo de productos</h1>
+    <p style="color:var(--muted); margin-top:0;">Selecciona una pestaña para ver routers, switches o cámaras inteligentes.</p>
+
+    <div role="tablist" aria-label="Categorias" class="tabs" id="tabs"></div>
+
+    <main id="panel" aria-live="polite">
+      <div class="products" id="products"></div>
+    </main>
+  </div>
+
+  <script src="scripts/az.js"></script>
+</body>
+</html>
