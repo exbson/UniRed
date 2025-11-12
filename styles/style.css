@@ -1,6 +1,13 @@
 body {
-  background: linear-gradient(to left, orange, blue, white);
-  padding-top: 70px;
+  background-image: url('images/imagen de WhatsApp.jpg');
+  background-repeat: repeat;
+  /* se repite como patrón */
+  background-size: auto;
+  /* mantiene el tamaño original */
+  background-attachment: fixed;
+  /* fondo fijo al hacer scroll */
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 .navbar {
