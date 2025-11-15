@@ -1,0 +1,220 @@
+:root {
+  --primary-orange: #f97316;
+  --secondary-orange: #ffb677;
+  --primary-blue: #2563eb;
+  --primary-white: #fff;
+}
+
+
+/* Títulos en naranja */
+.title-orange,
+h2.title-orange,
+h1.title-orange,
+h3.title-orange,
+h4.title-orange,
+h5.title-orange {
+  color: var(--primary-orange) !important;
+}
+
+/* Fondo gradiente difuminado naranja a blanco en cada sección */
+.section-gradiente {
+  background: linear-gradient(180deg, var(--primary-orange) 0%, var(--secondary-orange) 30%, var(--primary-white) 100%);
+  border-radius: 16px;
+  box-shadow: 0 8px 28px rgba(249, 115, 22, 0.04);
+  margin-bottom: 28px;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+/* Extra: poner títulos secundarios también en naranja */
+.section-gradiente .fw-bold,
+.section-gradiente h4,
+.section-gradiente h3,
+.section-gradiente h5 {
+  color: var(--primary-orange) !important;
+}
+
+/* Animación logo y navbar tuya normal */
+.animate-logo {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+/* Hero/Banner background (puedes ajustar foto si prefieres) */
+.hero {
+  background: linear-gradient(rgba(0, 0, 60, 0.7), rgba(0, 0, 90, 0.8)), url('https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;
+  min-height: 60vh;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+}
+
+/* Tarjetas de servicios visuales */
+.section-services .row>div {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(249, 115, 22, 0.09);
+  padding: 35px 18px;
+  margin: 0 0 15px 0;
+  transition: 0.3s;
+}
+
+.section-services .row>div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 50px rgba(249, 115, 22, 0.19);
+}
+
+/* Productos sección imagen y lista */
+.section-products .img-fluid {
+  max-width: 300px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.section-products ul {
+  padding-left: 18px;
+  margin-bottom: 18px;
+}
+
+/* Experiencia/Stats visuales */
+.section-stats .row>div {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 22px rgba(249, 115, 22, 0.14);
+  padding: 22px 12px;
+  margin-bottom: 16px;
+}
+
+/* Footer, social, mapas tuyo estándar */
+.social-icons a:hover {
+  color: var(--primary-orange) !important;
+}
+
+/* Otros estilos previos/habituales (navbar, botones, animaciones, responsive, etc.) */
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  padding: 8px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #ffca2c;
+  color: #000 !important;
+  box-shadow: 0 0 10px rgba(255, 202, 44, 0.7);
+  transform: scale(1.05);
+}
+
+.btn-warning {
+  transition: 0.3s ease-in-out;
+}
+
+.btn-warning:hover {
+  transform: scale(1.1);
+  background-color: #ffc107;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+h2 {
+  letter-spacing: 1px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+}
+
+.fade-in-delay {
+  opacity: 0;
+  animation: fadeIn 1.8s ease forwards;
+}
+
+.fade-in-delay2 {
+  opacity: 0;
+  animation: fadeIn 2.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.wifi-product-section {
+  padding: 60px 10%;
+  background-color: #fff;
+  color: #333;
+}
+
+.wifi-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.wifi-image img {
+  width: 450px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wifi-text {
+  max-width: 550px;
+}
+
+.wifi-text h2 {
+  font-size: 1.8rem;
+  color: #44566c;
+  margin-bottom: 10px;
+}
+
+.wifi-text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.wifi-text ul {
+  margin: 15px 0 25px;
+  padding-left: 20px;
+}
+
+.wifi-text li {
+  margin-bottom: 8px;
+}
+
+.info-btn {
+  background-color: #5dc15d;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.info-btn:hover {
+  background-color: #4ba84b;
+}
