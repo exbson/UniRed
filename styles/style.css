@@ -1,14 +1,11 @@
-/* body {
-  background-image: url("images/fondo.png2");
-  background-repeat: repeat;
-  /* se repite como patrón 
-  background-size: auto;
-  /* mantiene el tamaño original 
-  background-attachment: fixed;
-  /* fondo fijo al hacer scroll 
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-} */
+body {
+  background-image: url(../images/fondo.png) !important;
+  background-repeat: repeat !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  margin: 0 !important;
+  font-family: "Poppins", sans-serif !important;
+}
 
 .navbar {
   background-color: white;
