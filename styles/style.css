@@ -1,14 +1,14 @@
-body {
-  background-image: url('images/imagen de WhatsApp.jpg');
+/* body {
+  background-image: url("images/fondo.png2");
   background-repeat: repeat;
-  /* se repite como patrón */
+  /* se repite como patrón 
   background-size: auto;
-  /* mantiene el tamaño original */
+  /* mantiene el tamaño original 
   background-attachment: fixed;
-  /* fondo fijo al hacer scroll */
+  /* fondo fijo al hacer scroll 
   margin: 0;
   font-family: "Poppins", sans-serif;
-}
+} */
 
 .navbar {
   background-color: white;
