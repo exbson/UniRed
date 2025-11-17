@@ -10,7 +10,7 @@ body {
   color: #222;
 }
 
-h1, h2, h3 {
+h1, h3 {
   margin: 0;
   font-weight: 600;
 }
@@ -18,7 +18,14 @@ h1, h2, h3 {
 /* Título principal */
 h1 {
   text-align: center;
-  color: #004aad;
+  color: orangered;
+  font-size: 2em;
+  margin-top: 40px;
+}
+/* Título 2 */
+h2 {
+  text-align: center;
+  color: orangered;
   font-size: 2em;
   margin-top: 40px;
 }
@@ -101,27 +108,6 @@ h1 {
 }
 
 /* =========================================
-   ====== BOTÓN DE CONTACTO ======
-========================================= */
-
-#btn-contacto {
-  display: inline-block;
-  margin-top: 30px;
-  background-color: #004aad;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-#btn-contacto:hover {
-  background-color: #003680;
-}
-
-/* =========================================
    ====== RESPONSIVO ======
 ========================================= */
 
@@ -155,7 +141,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #004aad; /* azul corporativo */
+  background-color: #0250a8; 
   color: white;
   border-radius: 8px;
   overflow: hidden;
@@ -195,7 +181,7 @@ h1 {
 }
 
 .promo-texto h3 span {
-  color: #ffeb3b; /* amarillo para resaltar */
+  color: orangered; 
   font-weight: bold;
 }
 
