@@ -1,21 +1,37 @@
-/* function Registrado() {
-  const nombre = document.getElementById("Nombre").value;
-  const apellido = document.getElementById("Apellido").value;
-  const email = document.getElementById("Correo").value;
-  const teléfono = document.getElementById("Teléfono").value;
-  const empresa = document.getElementById("Empresa").value;
-  const comentario = document.getElementById("mensaje").value;
+function Registrado() {
+  const datos = obtenerDatos();
 
-  console.log("Informacion del Cliente:");
-  console.log("Nombre:", nombre);
-  console.log("Apellido:", apellido);
-  console.log("Correo:", email);
-  console.log("Telefono:", teléfono);
-  console.log("Empresa:", empresa);
-  console.log("Comentario:", comentario);
+  if (!validarFormulario(datos)) {
+    Swal.fire({
+      icon: "error",
+      title: "Campos incompletos",
+      text: "Por favor completa todos los campos.",
+      confirmButtonColor: "#0D6EFD",
+    });
+    return;
+  }
 
-  alert(
-    `Datos enviados:\nNombre: ${nombre}\nApellido: ${apellido}\nCorreo: ${email}\nTelefono: ${teléfono}
-    \nEmpresa: ${empresa}\nComentario: ${comentario}`
-  );
-} */
+  // Mostrar datos enviados
+  Swal.fire({
+    icon: "success",
+    title: "Datos enviados correctamente",
+    confirmButtonColor: "#0D6EFD",
+    html: `
+            <strong>Nombre:</strong> ${datos.nombre}<br>
+            <strong>Apellido:</strong> ${datos.apellido}<br>
+            <strong>Correo:</strong> ${datos.correo}<br>
+            <strong>Teléfono:</strong> ${datos.telefono}<br>
+            <strong>Empresa:</strong> ${datos.empresa}<br>
+            <strong>Comentario:</strong> ${datos.comentario}
+        `,
+  });
+
+  console.log("--------------* Datos recibidos: *--------------");
+  console.log("Nombre:", datos.nombre);
+  console.log("Apellido:", datos.apellido);
+  console.log("Correo:", datos.correo);
+  console.log("Teléfono:", datos.telefono);
+  console.log("Empresa:", datos.empresa);
+  console.log("Comentario:", datos.comentario);
+  console.log("-------------------------------------------------");
+}
