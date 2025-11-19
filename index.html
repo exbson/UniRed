@@ -17,7 +17,11 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <!--link styles.css-->
     <link rel="stylesheet" href="styles/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="images/  " href="images/ICONO UNIRED.png" />
 
     <style>
       body {
@@ -93,24 +97,94 @@
 
     <main>
       <!-- Banner INICIO -->
-      <div
-        id="inicio"
-        class="hero d-flex align-items-center text-center text-light"
-      >
-        <div class="container">
-          <h1 class="display-4 fw-bold fade-in">
-            <span class="text-warning">UNIRED</span>
-          </h1>
-          <p class="lead fade-in-delay">
-            Soluciones profesionales en conectividad, redes y tecnología. Mejora
-            tu empresa con tecnología de próxima generación.
-          </p>
-          <a
-            href="#nosotros"
-            class="btn btn-warning btn-lg mt-4 px-4 fade-in-delay2"
+    <style>
+  /* Estilo para el título centrado */
+  .titulo-carrusel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4rem;
+    font-weight: 800;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+    z-index: 5;
+  }
+</style>
+
+<div class="container mt-4">
+  <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+    
+    <div class="carousel-inner">
+
+      <div class="carousel-item active position-relative">
+        <h1 class="titulo-carrusel">UNIRED</h1>
+        <img
+          src="images/INICIO.jpg"
+          class="d-block w-100"
+          style="height: 600px; object-fit: cover"
+          alt="Primera imagen"
+        />
+      </div>
+
+      <div class="carousel-item position-relative">
+        <h1 class="titulo-carrusel">UNIRED</h1>
+        <img
+          src="images/inicio2.jpg"
+          class="d-block w-100"
+          style="height: 600px; object-fit: cover"
+          alt="Segunda imagen"
+        />
+      </div>
+
+      <div class="carousel-item position-relative">
+        <h1 class="titulo-carrusel">UNIRED</h1>
+        <img
+          src="images/inicio3.jpeg"
+          class="d-block w-100"
+          style="height: 600px; object-fit: cover"
+          alt="Tercera imagen"
+        />
+      </div>
+
+    </div>
+
+    <!-- Controles -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+
+  </div>
+</div>
+
+
+     
+          <!-- Controles -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#miCarrusel"
+            data-bs-slide="prev"
           >
-            Descubre Más
-          </a>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#miCarrusel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
       </div>
 

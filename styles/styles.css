@@ -5,7 +5,6 @@
   --primary-white: #fff;
 }
 
-
 /* Títulos en naranja */
 .title-orange,
 h2.title-orange,
@@ -18,7 +17,12 @@ h5.title-orange {
 
 /* Fondo gradiente difuminado naranja a blanco en cada sección */
 .section-gradiente {
-  background: linear-gradient(180deg, var(--primary-orange) 0%, var(--secondary-orange) 30%, var(--primary-white) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--primary-orange) 0%,
+    var(--secondary-orange) 30%,
+    var(--primary-white) 100%
+  );
   border-radius: 16px;
   box-shadow: 0 8px 28px rgba(249, 115, 22, 0.04);
   margin-bottom: 28px;
@@ -40,7 +44,6 @@ h5.title-orange {
 }
 
 @keyframes bounce {
-
   0%,
   100% {
     transform: translateY(0);
@@ -53,7 +56,9 @@ h5.title-orange {
 
 /* Hero/Banner background (puedes ajustar foto si prefieres) */
 .hero {
-  background: linear-gradient(rgba(0, 0, 60, 0.7), rgba(0, 0, 90, 0.8)), url('https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1600&q=60') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 60, 0.7), rgba(0, 0, 90, 0.8)),
+    url("https://images.unsplash.com/photo-1581090700227-1e37b190418e?auto=format&fit=crop&w=1600&q=60")
+      center/cover no-repeat;
   min-height: 60vh;
   margin-top: 70px;
   display: flex;
@@ -61,7 +66,7 @@ h5.title-orange {
 }
 
 /* Tarjetas de servicios visuales */
-.section-services .row>div {
+.section-services .row > div {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 8px 32px rgba(249, 115, 22, 0.09);
@@ -70,7 +75,7 @@ h5.title-orange {
   transition: 0.3s;
 }
 
-.section-services .row>div:hover {
+.section-services .row > div:hover {
   transform: translateY(-8px);
   box-shadow: 0 16px 50px rgba(249, 115, 22, 0.19);
 }
@@ -88,7 +93,7 @@ h5.title-orange {
 }
 
 /* Experiencia/Stats visuales */
-.section-stats .row>div {
+.section-stats .row > div {
   background: #fff;
   border-radius: 15px;
   box-shadow: 0 6px 22px rgba(249, 115, 22, 0.14);
