@@ -52,6 +52,21 @@ body {
   filter: invert(1);
 }
 
+.animate-logo {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
 .container {
   max-width: 980px;
   margin: 0 auto;

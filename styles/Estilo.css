@@ -3,20 +3,18 @@
 ========================================= */
 
 body {
-    background-image: url(../images/fondo.jpg);
-            background-size: cover;
-            /* Ajusta la imagen al tamaño de la pantalla */
-            background-position: center;
-            /* Centra la imagen */
-            background-repeat: no-repeat;
-            /* Evita que se repita */
+  background-image: url(../images/fondo.jpg);
+  background-size: cover;
+  /* Ajusta la imagen al tamaño de la pantalla */
+  background-position: center;
+  /* Centra la imagen */
+  background-repeat: no-repeat;
+  /* Evita que se repita */
   font-family: "Segoe UI", Arial, sans-serif;
   /* background-color: #f4f6fb; */
   margin: 0;
   padding: 0;
   color: #222;
-
-
 }
 
 h1,
@@ -85,6 +83,21 @@ h2 {
 
 .navbar-light .navbar-toggler-icon {
   filter: invert(1);
+}
+
+.animate-logo {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
 /* =========================================
