@@ -42,9 +42,9 @@ h3 {
 }
 
 .brand-text {
-  color: var(--primary-orange) !important; /* color del texto */
-  font-size: 1.3rem; /* tamaño del texto */
-  font-weight: 700;  /* grosor */
+  color: var(--primary-orange) !important; 
+  font-size: 1.3rem; 
+  font-weight: 700;  
 }  
 
 .formulario {
@@ -125,7 +125,7 @@ h3 {
 .navbar-light .navbar-toggler-icon {
   filter: invert(1);
 }
-/*  */
+
 .contenedor {
   display: flex;
   flex-wrap: wrap;
