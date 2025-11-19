@@ -37,9 +37,9 @@ h3 {
   color: white;
 }
 
-::placeholder {
+/* ::placeholder {
   color: #8A97A6;
-}
+} */
 
 .brand-text {
   color: var(--primary-orange) !important; 

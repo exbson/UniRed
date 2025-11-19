@@ -103,8 +103,8 @@ function renderProducts(category) {
     card.className = "card";
     card.innerHTML = `
       <div class="thumb" onclick="ampliarImagen('${p.img}', '${p.name}')">
-  <img src="${p.img}" alt="${p.name}">
-</div>
+      <img src="${p.img}" alt="${p.name}">
+      </div>
 
       <div class="name">${p.name}</div>
       <div class="desc">${p.desc}</div>
