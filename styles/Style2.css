@@ -10,6 +10,46 @@ body {
   background: var(--page-bg);
   margin: 0;
   padding: 32px;
+  text-align: center;
+}
+
+.brand-text {
+  color: var(--primary-orange) !important; /* color del texto */
+  font-size: 1.3rem; /* tamaño del texto */
+  font-weight: 700;  /* grosor */
+}  
+
+.navbar {
+  width: 100%;
+  background: #0D6EFD;
+  padding: 12px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+} 
+.navbar .nav-link,
+.navbar .navbar-brand span {
+  color: #fff !important;
+  margin-left: 10px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  padding: 8px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #ffca2c;
+  color: #000 !important;
+  box-shadow: 0 0 10px rgba(255, 202, 44, 0.7);
+  transform: scale(1.05);
+}
+
+.navbar .nav-link.active {
+  color: #dce9ff !important;
+}
+
+.navbar-light .navbar-toggler-icon {
+  filter: invert(1);
 }
 
 .container {
