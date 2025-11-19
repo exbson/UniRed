@@ -5,21 +5,21 @@ const data = {
       name: "Router AC1200",
       price: "$85.000",
       desc: "Dual-band, 4 puertos LAN, ideal para hogares medianos",
-      img: "images/Router AC1200.png",
+      img: "images/Productos/Router AC1200.png",
     },
     {
       id: 2,
       name: "Router AX3000",
       price: "$220.000",
       desc: "Wi-Fi 6, MU-MIMO, mejor rendimiento en múltiples dispositivos",
-      img: "images/Router AX3000.png",
+      img: "images/Productos/Router AX3000.png",
     },
     {
       id: 3,
       name: "Router 4G LTE",
       price: "$140.000",
       desc: "Soporte SIM, ideal para zonas sin fibra o como backup",
-      img: "images/Router AX3000Router 4G LTE.png",
+      img: "images/Productos/Router AX3000Router 4G LTE.png",
     },
   ],
   Switches: [
@@ -28,21 +28,21 @@ const data = {
       name: "Switch 8 puertos Gigabit",
       price: "$120.000",
       desc: "Plug & play, montaje en escritorio",
-      img: "https://images.unsplash.com/photo-1614064648228-42b4a0c8a276?auto=format&fit=crop&w=800&q=80",
+      img: "images/Productos/Switch 8 puertos Gigabit.png",
     },
     {
       id: 11,
       name: "Switch PoE 24 puertos",
       price: "$680.000",
       desc: "Suministra energía a cámaras y puntos de acceso",
-      img: "https://images.unsplash.com/photo-1614079065027-8b5b4cfb4b5b?auto=format&fit=crop&w=800&q=80",
+      img: "images/Productos/Switch PoE 24 puertos.png",
     },
     {
       id: 12,
       name: "Switch administrable 48",
       price: "$1.300.000",
       desc: "VLAN, QoS y gestión por web/CLI",
-      img: "https://images.unsplash.com/photo-1631815586721-9b923e16c6b2?auto=format&fit=crop&w=800&q=80",
+      img: "images/Productos/Switch administrable 48.jpg",
     },
   ],
   "Cámaras Inteligentes": [
@@ -51,21 +51,21 @@ const data = {
       name: "Cámara IP 1080p",
       price: "$180.000",
       desc: "Visión nocturna, detección de movimiento, app móvil",
-      img: "https://images.unsplash.com/photo-1581092334651-ddf57eae1d4a?auto=format&fit=crop&w=800&q=80",
+      img: "images/Productos/Camera IP 1080P.jpg",
     },
     {
       id: 21,
       name: "Cámara 4K con IA",
       price: "$480.000",
       desc: "Reconocimiento facial y notificaciones inteligentes",
-      img: "https://images.unsplash.com/photo-1594737625785-cabc88bcbba0?auto=format&fit=crop&w=800&q=80",
+      img: "images/Productos/Cámara 4K con IA.jpg",
     },
     {
       id: 22,
       name: "Cámara Bullet PoE",
       price: "$260.000",
-      desc: "Instalación exterior, resistente al agua",
-      img: "https://images.unsplash.com/photo-1606220838310-4844e76e9b9c?auto=format&fit=crop&w=800&q=80",
+      desc: "Instalación exterior resistente al agua, visión nocturna y alimentación PoE.",
+      img: "images/Productos/Cámara Bullet PoE.jpg",
     },
   ],
 };
@@ -102,9 +102,10 @@ function renderProducts(category) {
     const card = document.createElement("article");
     card.className = "card";
     card.innerHTML = `
-      <div class="thumb">
-        <img src="${p.img}" alt="${p.name}">
-      </div>
+      <div class="thumb" onclick="ampliarImagen('${p.img}', '${p.name}')">
+  <img src="${p.img}" alt="${p.name}">
+</div>
+
       <div class="name">${p.name}</div>
       <div class="desc">${p.desc}</div>
       <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px">
@@ -136,6 +137,15 @@ function findProductById(id) {
     if (found) return found;
   }
   return null;
+}
+
+function ampliarImagen(src, alt) {
+  const modalImg = document.getElementById("modalImage");
+  modalImg.src = src;
+  modalImg.alt = alt;
+
+  const modal = new bootstrap.Modal(document.getElementById('imgModal'));
+  modal.show();
 }
 
 // Inicializar con la primera pestaña

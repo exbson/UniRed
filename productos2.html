@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Catálogo de Productos - Routers, Switches, Cámaras</title>
-  <link rel="stylesheet" href="styles/Style2.css" />
-  
-      <!-- Bootstrap CSS -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Catálogo de Productos - Routers, Switches, Cámaras</title>
+    <link rel="stylesheet" href="styles/Style2.css" />
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Bootstrap JS -->
@@ -20,8 +21,9 @@
     <!-- SWEETALERT2 -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
-   <header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -47,17 +49,27 @@
     <br>
     <br>
     <br>
-  <div class="container">
-    <h1>Catálogo de productos</h1>
-    <p style="color:var(--muted); margin-top:0;">Selecciona una pestaña para ver routers, switches o cámaras inteligentes.</p>
+    <div class="container">
+        <h1>Catálogo de productos</h1>
+        <p style="color:var(--muted); margin-top:0;">Selecciona una pestaña para ver routers, switches o cámaras
+            inteligentes.</p>
 
-    <div role="tablist" aria-label="Categorias" class="tabs" id="tabs"></div>
+        <div role="tablist" aria-label="Categorias" class="tabs" id="tabs"></div>
 
-    <main id="panel" aria-live="polite">
-      <div class="products" id="products"></div>
-    </main>
-  </div>
-
-  <script src="scripts/az.js"></script>
+        <main id="panel" aria-live="polite">
+            <div class="products" id="products"></div>
+        </main>
+    </div>
+    <div class="modal fade" id="imgModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <img id="modalImage" src="" class="img-fluid w-100" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/az.js"></script>
 </body>
+
 </html>
