@@ -13,6 +13,10 @@ h1,
   color: #0A2A43;
 }
 
+.animate-logo {
+  animation: bounce 2s infinite;
+}
+
 p {
   text-align: center;
   color: #1F2A35;
@@ -25,6 +29,12 @@ h3 {
 ::placeholder {
   color: #8A97A6;
 }
+
+.brand-text {
+  color: var(--primary-orange) !important; /* color del texto */
+  font-size: 1.3rem; /* tamaño del texto */
+  font-weight: 700;  /* grosor */
+}  
 
 .formulario {
   width: 300px;
@@ -87,7 +97,7 @@ h3 {
   margin-left: 10px;
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
-  padding: 8px 15px;
+  padding: 8px 10px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -111,7 +121,7 @@ h3 {
   text-align: center;
   justify-content: center;
   gap: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .div-contact {
