@@ -21,6 +21,42 @@ const data = {
       desc: "Soporte SIM, ideal para zonas sin fibra o como backup",
       img: "images/Productos/Router AX3000Router 4G LTE.png",
     },
+    /*  */
+      {
+      id: 4,
+      name: "Router AC1900",
+      price: "$120.000",
+      desc: "Dual-band, 3 antenas externas, ideal para streaming HD y videojuegos.",
+      img: "images/Productos/Router AC1900.png",
+    },
+      {
+      id: 5,
+      name: "Router AX1800",
+      price: "$170.000",
+      desc: "Wi-Fi 6, OFDMA, mejor cobertura y estabilidad en varios dispositivos.",
+      img: "images/Productos/Router AX1800.png",
+    },
+      {
+      id: 6,
+      name: "Router AC750",
+      price: "$65.000",
+      desc: "Doble banda, económico, ideal para apartamentos pequeños.",
+      img: "images/Productos/Router AC750.png",
+    },
+      {
+      id: 7,
+      name: "Router AC3000 Tri-Band",
+      price: "$310.000",
+      desc: "Tri-band, MU-MIMO, excelente rendimiento para hogares con muchos usuarios.",
+      img: "images/Productos/Router AC3000 Tri-Band.png ",
+    },
+      {
+      id: 8,
+      name: "Router Gaming AC5400",
+      price: "$450.000",
+      desc: "Diseñado para gamers, QoS avanzado, 8 antenas de alto rendimiento.",
+      img: "images/Productos/Router Gaming AC5400.png",
+    },
   ],
   Switches: [
     {
