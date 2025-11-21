@@ -3,7 +3,7 @@
 ========================================= */
 
 body {
-  background-image: url(../images/fondo.jpg);
+  background-image: url(../images/imagen_de_fondo.jpg);
   background-size: cover;
   /* Ajusta la imagen al tamaño de la pantalla */
   background-position: center;
